@@ -1,0 +1,67 @@
+{
+    "1": {
+        "id": 1,
+        "class": "Sequence",
+        "name": "",
+        "asset-pack": "core",
+        "children": [
+            4,
+            6
+        ],
+        "decorators": [],
+        "options": {}
+    },
+    "4": {
+        "id": 4,
+        "class": "Sequence",
+        "name": "",
+        "options": {},
+        "asset-pack": "core",
+        "parent": 1,
+        "children": [
+            "33c41c80-e576-43db-a71f-ad55ee67f108",
+            "399db7b2-1cd5-435a-a3ad-f11bf3f3c635"
+        ]
+    },
+    "6": {
+        "id": 6,
+        "class": "PlayAudio",
+        "name": "Bawhoop",
+        "asset-pack": "core",
+        "parent": 1,
+        "options": {
+            "audioPath": "FX_Bawhoop.mp3"
+        }
+    },
+    "meta": {
+        "version": 1
+    },
+    "33c41c80-e576-43db-a71f-ad55ee67f108": {
+        "id": "33c41c80-e576-43db-a71f-ad55ee67f108",
+        "class": "TextToSpeech",
+        "name": "",
+        "options": {
+            "words": "Hello fozzarelo, I am alive!",
+            "onWord": [
+                "(word) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 4
+    },
+    "399db7b2-1cd5-435a-a3ad-f11bf3f3c635": {
+        "id": "399db7b2-1cd5-435a-a3ad-f11bf3f3c635",
+        "class": "PlayAnimation",
+        "name": "",
+        "options": {
+            "animPath": "greeting.keys",
+            "config": [
+                "(animation) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 4
+    }
+}
